@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAolBMVEVHcEz12ELPoCTsuDDmvjbz3UvfyVLuvi/QvmDu1k715Ebksy715kztwDD44UL10Db03T3lty92g4UAcMIHcb4AbrwbcK355TD54DH82TEAg+P73TALg9f+yjIEedD3yDDpwynjsirwxy/71DXzwTLpty4RiN7/3x7ezFryxBKztoBJlMlikrPhrxPKu2WXppX46EB1ori2p2mNrqf74C0kgMZ4zZVyAAAAF3RSTlMAilffd2E2/h5OxaivvuTYp5x9kpB5T3DeRN4AAAFhSURBVCiRbZLpdoIwEEYjgoDWalcIELYQIOyKff9X6yTBAtZ7+DX3fDkzzCA0Y9mGYVvoCbvz4EiGl92DsvbOgtdV3B6cFYM+O8P5x+Yvt667gONO1lrX76i29uvyrQBurv8qZ3BXFOVY1zX1fd8AeV4Y3y9GTzAWGJ9AzgIoLl6eg2w4xhjamcoYPlxUwjVVVcYRxjaylVIUuQeOx0BKsY6MuxCUItjFUqZ0g4yFU69yqdIo2iAbYwp1WgqgHa/uuknqyBIRWvUXOUIAeF4vHbERooIi7epAkoO9xlLCnEdK067qx0kCdZKAi7bi94Fk0APn/Coebds2YQyCcqcnsCaLmRn3YRj+tEmSMDMjmVoZISQ1TTPjTRiEDUgmpKYWqoPNAB5AslfB6HA/hTew0EEGLryq4HE+IpElpBNSBFl2QAt2JsipH8aY9nC52pY0IJsk2eroCd9fnx/v2uKgfwEGYkIaMh29tgAAAABJRU5ErkJggg==">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="media768.css">
+        <link rel="stylesheet" href="media425.css">
+        <link rel="stylesheet" href="media375.css">
+        <link rel="stylesheet" href="media320.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+
+</head>
+
+<body>
+    <nav>
+        <div class="menu">
+            <span class="material-symbols-outlined">
+                menu
+            </span>
+        </div>
+        <div class="logo">
+            <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
+                width="160" height="40" title="Flipkart">
+        </div>
+        <div class="search">
+            <span class="material-symbols-outlined">
+                search
+            </span>
+            <input type="Search" placeholder="Search for Products, Brands and More">
+        </div>
+        <div class="login">
+            <span class="material-symbols-outlined">
+                account_circle
+            </span>
+            <p>Login</p>
+            <span class="material-symbols-outlined">
+                expand_more
+            </span>
+            <div class="dropdown-items">
+                <div class="head">
+                    <p>New Customer?</p>
+                    <button>Sign Up</button>
+                </div>
+                <div class="items">
+                    <span class="material-symbols-outlined">
+                        account_circle
+                    </span>
+                    <p>My Profile</p>
+                </div>
+                <div class="items">
+                    <span class="material-symbols-outlined">
+                        add_box
+                    </span>
+                    <p>Flipkart Plus Zone</p>
+                </div>
+                <div class="items">
+                    <span class="material-symbols-outlined">
+                        package_2
+                    </span>
+                    <p>Orders</p>
+                </div>
+                <div class="items">
+                    <span class="material-symbols-outlined">
+                        favorite
+                    </span>
+                    <p>Whislist</p>
+                </div>
+                <div class="items">
+                    <span class="material-symbols-outlined">
+                        featured_seasonal_and_gifts
+                    </span>
+                    <p>Rewards</p>
+                </div>
+                <div class="items">
+                    <span class="material-symbols-outlined">
+                        redeem
+                    </span>
+                    <p>Gift Cards</p>
+                </div>
+            </div>
+        </div>
+        <div class="cart">
+            <span class="material-symbols-outlined">
+                shopping_cart
+            </span>
+            <p>Cart</p>
+        </div>
+        <div class="seller">
+            <span class="material-symbols-outlined">
+                storefront
+            </span>
+            <p>Become a Seller</p>
+        </div>
+        <div class="dot">
+            <span class="material-symbols-outlined">
+                more_vert
+            </span>
+            <div class="drop">
+                <div class="items">
+                    <span class="material-symbols-outlined">
+                        notifications
+                    </span>
+                    <p>Notification Preference</p>
+                </div>
+                <div class="items">
+                    <span class="material-symbols-outlined">
+                        support_agent
+                    </span>
+                    <p>24x7 Customer Care</p>
+                </div>
+                <div class="items">
+                    <span class="material-symbols-outlined">
+                        trending_up
+                    </span>
+                    <p>Advertise</p>
+                </div>
+                <div class="items">
+                    <span class="material-symbols-outlined">
+                        download
+                    </span>
+                    <p>Download App</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="selector">
+        <div class="area">
+            <div class="items">
+                <img src="assests/images/grocery.webp" alt="grocery-image">
+                <p>Grocery</p>
+            </div>
+            <div class="items">
+                <img src="assests/images/mobile.webp" alt="mobile-image">
+                <p>Mobiles</p>
+            </div>
+            <div class="items">
+                <img src="assests/images/fashion.webp" alt="fashion-image">
+                <div class="more">
+                    <p>Fashion</p>
+                    <span class="material-symbols-outlined">
+                        expand_more
+                    </span>
+                </div>
+                <div class="dropdown">
+                    <div class="item">
+                        <p>Men's Top Wear</p>
+                        <span class="material-symbols-outlined">
+                            chevron_right
+                        </span>
+                        <div class="dropdown">
+                            <div class="item">More in Men's Top Wear</div>
+                            <div class="item">All</div>
+                            <div class="item">Men's T-Shirts</div>
+                            <div class="item">Men's Kurta</div>
+                            <div class="item">Men's Casual Shirts</div>
+                            <div class="item">Men's Ethnic Sets</div>
+                            <div class="item">Men's Blazers</div>
+                            <div class="item">Men's Raincoat</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <p>Men Footwear</p>
+                        <span class="material-symbols-outlined">
+                            chevron_right
+                        </span>
+                        <div class="dropdown">
+                            <div class="item">More in Men's Footwear</div>
+                            <div class="item">All</div>
+                            <div class="item">Men's Sports Shoes</div>
+                            <div class="item">Men's Casual Shoes</div>
+                            <div class="item">Men's Sandals & Floaters</div>
+                            <div class="item">Men's Formal Shoes</div>
+                            <div class="item">Men's Slippers</div>
+                            <div class="item">Men's Ethnic Shoes</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <p>Women Footwear</p>
+                        <span class="material-symbols-outlined">
+                            chevron_right
+                        </span>
+                        <div class="dropdown">
+                            <div class="item">More in Women's Footwear</div>
+                            <div class="item">All</div>
+                            <div class="item">Women's Sports Shoes</div>
+                            <div class="item">Women's Casual Shoes</div>
+                            <div class="item">Women's Sandals & Floaters</div>
+                            <div class="item">Women's Formal Shoes</div>
+                            <div class="item">Women's Slippers</div>
+                            <div class="item">Women's Ethnic Shoes</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <p>Watches and Accessories</p>
+                        <span class="material-symbols-outlined">
+                            chevron_right
+                        </span>
+                        <div class="dropdown">
+                            <div class="item">More in Watches</div>
+                            <div class="item">All</div>
+                            <div class="item">Men & Women Watch</div>
+                            <div class="item">Men Women Sunglasses</div>
+                            <div class="item">Wallets</div>
+                            <div class="item">Men & Women Belts</div>
+                            <div class="item">Men Fashion Jewellery</div>
+                            <div class="item">Women Fashion Jewellery</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <p>Kids</p>
+                        <span class="material-symbols-outlined">
+                            chevron_right
+                        </span>
+                        <div class="dropdown">
+                            <div class="item">More in Kids</div>
+                            <div class="item">All</div>
+                            <div class="item">Boys & Girls T-Shirts</div>
+                            <div class="item">Boys & Girls Combosets</div>
+                            <div class="item">Boys & Girls Jeans</div>
+                            <div class="item">Boys & Girls Shorts</div>
+                            <div class="item">Boys & Girls Ethnic Wear</div>
+                            <div class="item">Boys & Girls Trackpants</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="items">
+                <img src="assests/images/electronics.webp" alt="electronics-image">
+                <div class="more">
+                    <p>Electronics</p>
+                    <span class="material-symbols-outlined">
+                        expand_more
+                    </span>
+                </div>
+                <div class="dropdown">
+                    <div class="item">
+                        <p>Audio</p>
+                        <span class="material-symbols-outlined">
+                            chevron_right
+                        </span>
+                        <div class="dropdown">
+                            <div class="item">More in Audio</div>
+                            <div class="item">All</div>
+                            <div class="item">Bluetooth Headphone</div>
+                            <div class="item">Wired Headphone</div>
+                            <div class="item">Sound Bars</div>
+                            <div class="item">Bluetooth Speaker</div>
+                            <div class="item">Home Threater</div>
+                            <div class="item">TV Streaming Device</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <p>Camera</p>
+                        <span class="material-symbols-outlined">
+                            chevron_right
+                        </span>
+                        <div class="dropdown">
+                            <div class="item">More in Camera</div>
+                            <div class="item">All</div>
+                            <div class="item">DSLR</div>
+                            <div class="item">Camcoder</div>
+                            <div class="item">Instant Cameras</div>
+                            <div class="item">Drone</div>
+                            <div class="item">Point and Shot</div>
+                            <div class="item">Camera Tripod</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <p>Gaming</p>
+                        <span class="material-symbols-outlined">
+                            chevron_right
+                        </span>
+                        <div class="dropdown">
+                            <div class="item">More in Gaming</div>
+                            <div class="item">All</div>
+                            <div class="item">Gaming Keyboard</div>
+                            <div class="item">Gaming Mouse </div>
+                            <div class="item">Gaming Console</div>
+                            <div class="item">Games</div>
+                            <div class="item">Gamepad</div>
+                            <div class="item">Accessory Kits</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <p>Laptop and Desktop</p>
+                        <span class="material-symbols-outlined">
+                            chevron_right
+                        </span>
+                        <div class="dropdown">
+                            <div class="item">More in Laptop & Desktop</div>
+                            <div class="item">All</div>
+                            <div class="item">Laptops</div>
+                            <div class="item">Gaming Laptops</div>
+                            <div class="item">Desktop PCs</div>
+                            <div class="item">All in one PCs</div>
+                            <div class="item">Mini PCs</div>
+                            <div class="item">PC Finder</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <p>Laptop Accessories</p>
+                        <span class="material-symbols-outlined">
+                            chevron_right
+                        </span>
+                        <div class="dropdown">
+                            <div class="item">More in Laptop Accessories</div>
+                            <div class="item">All</div>
+                            <div class="item">Mouse</div>
+                            <div class="item">Laptop Keyboard</div>
+                            <div class="item">Router</div>
+                            <div class="item">Data Card</div>
+                            <div class="item">UPS</div>
+                            <div class="item">USB Gadget</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="items">
+                <img src="assests/images/furniture.webp" alt="furniture-image">
+                <div class="more">
+                    <p>Home & Furniture</p>
+                    <span class="material-symbols-outlined">
+                        expand_more
+                    </span>
+                    <div class="dropdown">
+                        <div class="item">
+                            <p>Home Furnishing</p>
+                            <span class="material-symbols-outlined">
+                                chevron_right
+                            </span>
+                            <div class="dropdown">
+                                <div class="item">More in Home Furnishing</div>
+                                <div class="item">All</div>
+                                <div class="item">Bed Linens</div>
+                                <div class="item">Bedsheet Blanket</div>
+                                <div class="item">Curtains & Accessories</div>
+                                <div class="item">Floor Covering</div>
+                                <div class="item">Cushion & Pillow</div>
+                                <div class="item">Covers & Protectors</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <p>Kitchen and Dining</p>
+                            <span class="material-symbols-outlined">
+                                chevron_right
+                            </span>
+                            <div class="dropdown">
+                                <div class="item">More in Kitchen & Dining</div>
+                                <div class="item">All</div>
+                                <div class="item">Cookware</div>
+                                <div class="item">Gas Stoves</div>
+                                <div class="item">Kitchen Tool</div>
+                                <div class="item">Barware</div>
+                                <div class="item">Bakeware</div>
+                                <div class="item">Table & Dinner Ware</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <p>Bedroom Furniture</p>
+                            <span class="material-symbols-outlined">
+                                chevron_right
+                            </span>
+                            <div class="dropdown">
+                                <div class="item">More in Bedroom Furniture</div>
+                                <div class="item">All</div>
+                                <div class="item">Mattresses</div>
+                                <div class="item">Beds</div>
+                                <div class="item">TV Unit</div>
+                                <div class="item">Side Table</div>
+                                <div class="item">Wardrobes</div>
+                                <div class="item">Bookshelves</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <p>Home Decor</p>
+                            <span class="material-symbols-outlined">
+                                chevron_right
+                            </span>
+                            <div class="dropdown">
+                                <div class="item">More in Home Decor</div>
+                                <div class="item">All</div>
+                                <div class="item">Clock</div>
+                                <div class="item">Lightning</div>
+                                <div class="item">Painting and Poster</div>
+                                <div class="item">Sticker and Wallpaper</div>
+                                <div class="item">Wall Decor</div>
+                                <div class="item">Home Fragnance</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="items">
+                <img src="assests/images/appliances.webp" alt="appliances-image">
+                <p>Appliances</p>
+            </div>
+            <div class="items">
+                <img src="assests/images/travel.webp" alt="travel-image">
+                <p>Travel</p>
+            </div>
+            <div class="items">
+                <img src="assests/images/teddy.webp" alt="teddy-image">
+                <div class="more">
+                    <p>Beauty, Toys & More</p>
+                    <span class="material-symbols-outlined">
+                        expand_more
+                    </span>
+                    <div class="dropdown">
+                        <div class="item">
+                            <p>Beauty and Personal Care</p>
+                            <span class="material-symbols-outlined">
+                                chevron_right
+                            </span>
+                            <div class="dropdown">
+                                <div class="item">More in Beauty & Care</div>
+                                <div class="item">All</div>
+                                <div class="item">Bath and Oral Care</div>
+                                <div class="item">Face Makeup</div>
+                                <div class="item">Hair Care</div>
+                                <div class="item">Eye Makeup</div>
+                                <div class="item">Personal Hygiene</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <p>Food and Drinks</p>
+                            <span class="material-symbols-outlined">
+                                chevron_right
+                            </span>
+                            <div class="dropdown">
+                                <div class="item">More in Food and Drinks</div>
+                                <div class="item">All</div>
+                                <div class="item">Cooking Essential</div>
+                                <div class="item">Choclates</div>
+                                <div class="item">Snack Corner</div>
+                                <div class="item">Breakfast Items</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <p>Books</p>
+                            <span class="material-symbols-outlined">
+                                chevron_right
+                            </span>
+                            <div class="dropdown">
+                                <div class="item">More in Books</div>
+                                <div class="item">All</div>
+                                <div class="item">Test Prep</div>
+                                <div class="item">Non Fiction</div>
+                                <div class="item">Audio Books</div>
+                                <div class="item">Academics</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="items">
+                <img src="assests/images/bike.webp" alt="bike-image">
+                <div class="more">
+                    <p>Two Wheelers</p>
+                    <span class="material-symbols-outlined">
+                        expand_more
+                    </span>
+                    <div class="dropdown">
+                        <div class="item">Petrol Vichles</div>
+                        <div class="item">Electric Vehicle</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="container">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assests/images/slide-1.webp" class="d-block" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assests/images/slide-2.webp" class="d-block" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assests/images/slide-3.webp" class="d-block" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assests/images/slide-4.webp" class="d-block" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assests/images/slide-5.webp" class="d-block" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img  src="assests/images/slide-6.webp" class="d-block" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assests/images/slide-7.webp" class="d-block" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div> -->
+
+    <div class="mobile">
+        <div class="area">
+            <div class="head"><b>Best Deals on Smartphones</b></div>
+            <div class="itm">
+                <div class="items">
+                    <img src="assests/images/m1.jpeg" alt="mobile-images">
+                    <p>moto edge 40 neo</p>
+                    <p>incl of offers</p>
+                </div>
+                <div class="items">
+                    <img src="assests/images/m2.jpeg" alt="mobile-images">
+                    <p>vivo t2 pro 5g</p>
+                    <p>incl of offers</p>
+                </div>
+                <div class="items">
+                    <img src="assests/images/m3.jpeg" alt="mobile-images">
+                    <p>poco m6 pro</p>
+                    <p>incl of offers</p>
+                </div>
+                <div class="items">
+                    <img src="assests/images/m5.jpeg" alt="mobile-images">
+                    <p>POCO X6 Neo 5G</p>
+                    <p>incl of offers</p>
+                </div>
+                <div class="items">
+                    <img src="assests/images/m2.jpeg" alt="mobile-images">
+                    <p>vivo t5 pro</p>
+                    <p>incl of offers</p>
+                </div>
+                <div class="items">
+                    <img src="assests/images/m3.jpeg" alt="mobile-images">
+                    <p>moto edge 60 Neo</p>
+                    <p>incl of offers</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide1">
+        <div class="area">
+            <div class="item">
+                <img src="assests/images/ms1.webp" alt="image">
+            </div>
+            <div class="item">
+                <img src="assests/images/ms2.webp" alt="">
+            </div>
+            <div class="item">
+                <img src="assests/images/ms3.webp" alt="image">
+            </div>
+        </div>
+    </div>
+    <div class="slide2">
+        <div class="area">
+            <div class="item">
+                <img src="assests/images/ms6.webp" alt="image">
+            </div>
+            <div class="item">
+                <img src="assests/images/ms5.webp" alt="image">
+            </div>
+            <div class="item">
+                <img src="assests/images/ms6.webp" alt="image">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <ul>
+            <li>ABOUT</li>
+            <li>Contact Us</li>
+            <li>About Us</li>
+            <li>Careers</li>
+            <li>Flipkart Stories</li>
+            <li>Press</li>
+            <li>Corporate Information</li>
+        </ul>
+        <ul>
+            <li>GROUP COMPANIES</li>
+            <li>Myntra</li>
+            <li>Flipkart Wholesale</li>
+            <li>Cleartrip</li>
+            <li>Shopsy</li>
+        </ul>
+        <ul>
+            <li>HELP</li>
+            <li>Payments</li>
+            <li>Shipping</li>
+            <li>Cancellation & Returns</li>
+            <li>FAQ</li>
+            <li>Report Infringment</li>
+        </ul>
+        <ul>
+            <li>CONSUMER POLICY</li>
+            <li>Cancellation & Returns
+            </li>
+            <li>Terms of Use</li>
+            <li>Security</li>
+            <li>Privacy</li>
+            <li>Sitemap</li>
+            <li>Greivance Redressal</li>
+            <li>EPR Compliance</li>
+        </ul>
+        <ul>
+            <li>Mail Us:</li>
+            <li>Flipkart Internet Private Limited,</li>
+            <li>Buildings Alyssa, Begonia &</li>
+            <li>Clove Embassy Tech Village,</li>
+            <li>Outer Ring Road, Devarabeessanahalli Village,</li>
+            <li>Bengaluru, 560103,</li>
+            <li>Karnataka, India</li>
+            <li>Social:</li>
+            <div class="img">
+                <img src="assests/images/fb.svg" alt="">
+                <img src="assests/images/tw.svg" alt="">
+                <img src="assests/images/yt.svg" alt="">
+            </div>
+        </ul>
+        <ul>
+            <li>Registered Office Address:</li>
+            <li>Flipkart Internet Private Limited,</li>
+            <li>Buildings Alyssa, Begonia &</li>
+            <li>Clove Embassy Tech Village,</li>
+            <li>Outer Ring Road, Devarabeessanahalli Village,</li>
+            <li>Bengaluru, 560103,</li>
+            <li>Karnataka, India</li>
+            <li>CIN : U51109KA2012PTC066107</li>
+            <li>Telephone: <span>044-45614700</span></li>
+        </ul>
+    </footer>
+    <footer class="s">
+        <div class="r1">
+            <ul>
+                <li>ABOUT</li>
+                <li>Contact Us</li>
+                <li>About Us</li>
+                <li>Careers</li>
+                <li>Flipkart Stories</li>
+                <li>Press</li>
+                <li>Corporate Information</li>
+            </ul>
+            <ul>
+                <li>GROUP COMPANIES</li>
+                <li>Myntra</li>
+                <li>Flipkart Wholesale</li>
+                <li>Cleartrip</li>
+                <li>Shopsy</li>
+            </ul>
+            <ul>
+                <li>HELP</li>
+                <li>Payments</li>
+                <li>Shipping</li>
+                <li>Cancellation & Returns</li>
+                <li>FAQ</li>
+                <li>Report Infringment</li>
+            </ul>
+        </div>
+        <div class="r2">
+            <ul>
+                <li>CONSUMER POLICY</li>
+                <li>Cancellation & Returns
+                </li>
+                <li>Terms of Use</li>
+                <li>Security</li>
+                <li>Privacy</li>
+                <li>Sitemap</li>
+                <li>Greivance Redressal</li>
+                <li>EPR Compliance</li>
+            </ul>
+            <ul>
+                <li>Mail Us:</li>
+                <li>Flipkart Internet Private Limited,</li>
+                <li>Buildings Alyssa, Begonia &</li>
+                <li>Clove Embassy Tech Village,</li>
+                <li>Outer Ring Road</li>
+                <li>Bengaluru, 560103,</li>
+                <li>Karnataka, India</li>
+                <li>Social:</li>
+                <div class="img">
+                    <img src="assests/images/fb.svg" alt="">
+                    <img src="assests/images/tw.svg" alt="">
+                    <img src="assests/images/yt.svg" alt="">
+                </div>
+            </ul>
+            <ul>
+                <li>Registered Office Address:</li>
+                <li>Flipkart Internet Private Limited,</li>
+                <li>Buildings Alyssa, Begonia &</li>
+                <li>Clove Embassy Tech Village,</li>
+                <li>Outer Ring Road</li>
+                <li>Bengaluru, 560103,</li>
+                <li>Karnataka, India</li>
+                <li>Telephone: <span>044-45614700</span></li>
+            </ul>
+        </div>
+    </footer>
+
+    <div class="ft">
+        <div class="d1">
+            <ul>
+                <li>ABOUT</li>
+                <li>Contact Us</li>
+                <li>About Us</li>
+                <li>Careers</li>
+                <li>Flipkart Stories</li>
+                <li>Press</li>
+                <li>Corporate Information</li>
+            </ul>
+            <ul>
+                <li>CONSUMER POLICY</li>
+                <li>Cancellation & Returns
+                </li>
+                <li>Terms of Use</li>
+                <li>Security</li>
+                <li>Privacy</li>
+                <li>Sitemap</li>
+                <li>Greivance Redressal</li>
+                <li>EPR Compliance</li>
+            </ul>
+        </div>
+        <div class="d2">
+            <ul>
+                <li>GROUP COMPANIES</li>
+                <li>Myntra</li>
+                <li>Flipkart Wholesale</li>
+                <li>Cleartrip</li>
+                <li>Shopsy</li>
+                <li>r</li>
+                <li>r</li>
+            </ul>
+            <ul>
+                <li>Mail Us:</li>
+                <li>Flipkart Internet Private Limited,</li>
+                <li>Buildings Alyssa, Begonia &</li>
+                <li>Clove Embassy Tech Village,</li>
+                <li>Outer Ring Road,</li>
+                <li>Bengaluru, 560103,</li>
+                <li>Karnataka, India</li>
+                <li>r</li>
+            </ul>
+        </div>
+
+        <div class="d3">
+            <ul>
+                <li>HELP</li>
+                <li>Payments</li>
+                <li>Shipping</li>
+                <li>Cancellation & Returns</li>
+                <li>FAQ</li>
+                <li>Report Infringment</li>
+            </ul>
+            <ul>
+                <li>Registered Office Address:</li>
+                <li>Flipkart Internet Private Limited,</li>
+                <li>Buildings Alyssa, Begonia &</li>
+                <li>Clove Embassy Tech Village,</li>
+                <li>Outer Ring Road,</li>
+                <li>Bengaluru, 560103,</li>
+                <li>Karnataka, India</li>
+                <li>CIN : U51109KA2012PTC066107</li>
+                <li>Telephone: <span>044-45614700</span></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="foot">
+        <div class="items">
+            <span class="material-symbols-outlined">
+                storefront
+            </span>
+            <p>Become a Seller</p>
+        </div>
+        <div class="items">
+            <span class="material-symbols-outlined">
+                hotel_class
+            </span>
+            <p>Advertise</p>
+        </div>
+        <div class="items">
+            <span class="material-symbols-outlined">
+                featured_seasonal_and_gifts
+            </span>
+            <p>Gift Card</p>
+        </div>
+        <div class="items">
+            <span class="material-symbols-outlined">
+                help
+            </span>
+            <p>Help Center</p>
+        </div>
+        <div class="items">
+            <p> &copy; 2007-2024 Flipkart.com</p>
+        </div>
+        <div class="items">
+            <img src="assests/images/p1.svg" alt="img">
+        </div>
+    </div>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+        const myCarouselElement = document.querySelector('#carouselExampleAutoplaying')
+
+const carousel = new bootstrap.Carousel(myCarouselElement, {
+  interval: 2000,
+  touch: false
+})
+    </script> -->
+</body>
+
+</html>
